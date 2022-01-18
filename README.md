@@ -1,6 +1,6 @@
 # Live Website
 
-Open [React Todo App](https://todo-app-sang.netlify.app/) to view live website.
+Open [React Todo App](https://react-todo-app-sang.netlify.app) to view live website.
 
 # Getting Started with Create React App
 
