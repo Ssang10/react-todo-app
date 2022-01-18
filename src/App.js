@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+import Header from "./components/Header";
+import IncompleteList from "./components/IncompleteList";
+import GlobalState from "./context/GlobalState";
+import CompletedList from "./components/CompletedList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <GlobalState>
+      <div className="App">
+        <Router>
+          <Header />
+          <Routes>
+            <Route path="/" element={<IncompleteList />} />
+            <Route path="/completed-list" element={<CompletedList />} />
+          </Routes>
+        </Router>
+      </div>
+    </GlobalState>
   );
 }
 
