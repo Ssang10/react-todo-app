@@ -1,3 +1,7 @@
+# Live Website
+
+Open [React Todo App](https://todo-app-sang.netlify.app/) to view live website.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
