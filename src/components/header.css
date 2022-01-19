@@ -30,6 +30,13 @@
   border-radius: 20px;
   border: none;
   cursor: pointer;
+  background-color: #dddddd;
+  color: #382933;
+  font-weight: 800;
+}
+
+form {
+  width: 60%;
 }
 
 input {
@@ -38,14 +45,19 @@ input {
   border: none;
   outline: none;
   border-radius: 6px;
+  width: 60%;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 422px) {
   .add-task {
-    margin: 0 0 10px 45px;
+    margin: 0 0 10px 55px;
   }
 
   .nav-links {
     text-align: center;
+  }
+
+  input {
+    width: 90%;
   }
 }
