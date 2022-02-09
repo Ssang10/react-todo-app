@@ -16,7 +16,10 @@ const CompletedList = () => {
         ))}
       </div>
       <div className="footer">
-        <button onClick={() => dispatch({ type: "delete complete list" })}>
+        <button
+          onClick={() => dispatch({ type: "delete complete list" })}
+          className="delete-all"
+        >
           Delete All
         </button>
       </div>

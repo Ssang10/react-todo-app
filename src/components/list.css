@@ -55,6 +55,10 @@
   margin-bottom: 65px;
 }
 
+.delete-all {
+  cursor: pointer;
+}
+
 @media (max-width: 415px) {
   .main {
     min-height: 80vh;
